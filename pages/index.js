@@ -120,29 +120,33 @@ export default function Home() {
             <Row className="text-center">
               <h5 className="mb-3 mt-4">Round {round}/3</h5>
             </Row>
-            <Row className="text-center">
-              <Scoreboard player={player} scoreComputer={scoreComputer} scorePlayer={scorePlayer}/>
+            <Row className="text-center justify-content-center">
+              <Col lg={3} sm={12}>
+                <Scoreboard player={player} scoreComputer={scoreComputer} scorePlayer={scorePlayer}/>
+              </Col>
             </Row>
             <hr className="hr hr-blurry" />
           </>
         )}    
-        {isChoosing && <Row className="justify-content-center flex-wrap">
-          <CardItem
-            gameOn={gameOn}
-            itemType="rock"
-            player={player}
-          />
-          <CardItem
-            gameOn={gameOn}
-            itemType="paper"
-            player={player}
-          />
-          <CardItem
-            gameOn={gameOn}
-            itemType="scissors"
-            player={player}
-          />
-        </Row>}
+        {isChoosing && 
+          <Row className="justify-content-center flex-wrap">
+            <CardItem
+              gameOn={gameOn}
+              itemType="rock"
+              player={player}
+            />
+            <CardItem
+              gameOn={gameOn}
+              itemType="paper"
+              player={player}
+            />
+            <CardItem
+              gameOn={gameOn}
+              itemType="scissors"
+              player={player}
+            />
+          </Row>
+        }
         {!isChoosing && player && roundWinner &&
           <>
             <Row className="justify-content-center flex-wrap">

@@ -9,7 +9,7 @@ const RoundInfo = ({
 }) => {
 
   return (
-    <Alert className="text-center" variant="primary">
+    <Alert className="text-center m-2" variant="primary">
       <Row>
         {round < 3 ? (
           <>

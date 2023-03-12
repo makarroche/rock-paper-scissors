@@ -2,7 +2,7 @@ import { Col, ListGroup, Row } from "react-bootstrap";
 
 const ScoreBoard = ({ player, scoreComputer, scorePlayer }) => {
   return (
-    <ListGroup as="ol" className="mx-auto w-25">
+    <ListGroup as="ol" className="mx-auto">
       <ListGroup.Item
         as="li"
         className="cardBg text-white justify-content-between"
