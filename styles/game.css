@@ -1,0 +1,19 @@
+.rock {
+    color: #FF69B4;
+  }
+
+.paper {
+    color: #00BFFF;
+}
+
+.scissors {
+   color: #FFEA00;
+}
+
+.cardBg {
+    background-color:  #7B68EE
+}
+
+.game-on{
+    font-weight: bold;
+}
